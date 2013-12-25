@@ -46,12 +46,7 @@ Note that your cursor must be on or above the first fence block.
 #### `MW_YamlFrontMatter`
 Will ask you to input keys and values, and add them to the top of your file in the form of YAML front matter. 
 
-Enter `end` to stop inputting. Best shown via a screencast:
-
-<iframe name='quickcast' src='http://quick.as/embed/8wesomb' scrolling='no' frameborder='0' width='100%' allowfullscreen></iframe><script>!function(){function n(){var n=document.getElementsByName('quickcast')
-for(var e in n){var t=n[e].offsetWidth
-n[e].height=t/1.86+'px'}}n(),window.onresize=n,window.addEventListener('message',function(n){if(n.data.indexOf('//quick.as/') != -1)window.location.href=n.data},!1)}()
-</script>
+Enter `end` to stop inputting. Best shown via a [screencast](http://quick.as/8wesomb)
 
 #### `MW_Heading(count)`
 Will insert as many hashes as passed in, and leave you in insert mode, ready to enter your heading.
