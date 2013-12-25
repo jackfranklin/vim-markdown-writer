@@ -67,12 +67,16 @@ Running `:call MW_Heading(5)` will do this:
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
     ```
 
+#### `MW_MakeWordLink()`
+Will make the current word under the cursor a link, after asking you for the URL. There is no need to enter `http://` in the URL, although if you do, the plugin will not add `http://` in again. Again, [shown best in a screencast](http://quick.as/2kwfpwp).
+
 ## How to Map
 
 ```
 nnoremap <leader>mt :call MW_MakeTwitterReferenceLink()<CR>
 nnoremap <leader>mfi :call MW_ConvertFencedToIndent()<CR>
-nnoremap <leader>my :call MW_YamlFrontMatter<CR>
+nnoremap <leader>my :call MW_YamlFrontMatter()<CR>
+nnoremap <leader>ml :call MW_MakeWordLink()<CR>
 nnoremap <leader>mh1 :call MW_Heading(1)<CR>
 nnoremap <leader>mh2 :call MW_Heading(2)<CR>
 nnoremap <leader>mh3 :call MW_Heading(3)<CR>
@@ -93,6 +97,9 @@ This is my first Vim plugin so any feedback is more than welcome. Please open an
 Add a proper Vim doc file.
 
 ## Changelog
+
+__0.0.3__
+- added `MW_MakeWorldLink`
 
 __0.0.2__
 - added `MW_Heading` method

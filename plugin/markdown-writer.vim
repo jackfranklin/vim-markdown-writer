@@ -42,4 +42,21 @@ function! MW_Heading(count)
   startinsert!
 endfunction
 
+function! MW_MakeWordLink()
+  let wordUnderCursor = expand("<cword>")
+  let currentLine = getline(".")
+  let url = input("URL (no need for http://): ")
+  let replacement = '['.wordUnderCursor.']'
+  if(url =~ 'http://')
+    let replacement .= '('.url.')'
+  else
+    let replacement .= '(http://'.url.')'
+  endif
+
+  let newLine = substitute(currentLine, wordUnderCursor, replacement, '')
+  call setline('.', newLine)
+  execute "normal! f)"
+  echo ""
+endfunction
+
 
