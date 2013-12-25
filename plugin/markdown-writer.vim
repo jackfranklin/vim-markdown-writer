@@ -35,4 +35,11 @@ function! MW_YamlFrontMatter()
 
 endfunction
 
+function! MW_Heading(count)
+  let headings = repeat("#", a:count)
+  execute "normal! I".headings." \<ESC>"
+  execute "normal! $"
+  startinsert!
+endfunction
+
 

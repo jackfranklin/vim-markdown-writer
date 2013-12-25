@@ -46,12 +46,36 @@ Note that your cursor must be on or above the first fence block.
 #### `MW_YamlFrontMatter`
 Will ask you to input keys and values, and add them to the top of your file in the form of YAML front matter. 
 
+### `MW_Heading(count)`
+Will insert as many hashes as passed in, and leave you in insert mode, ready to enter your heading.
+
+For example:
+
+    ```
+    {cursor is here}
+
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+    ```
+
+Running `:call MW_Heading(5)` will do this:
+
+    ```
+    ##### {cursor here, in insert mode}
+
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+    ```
+
 ## How to Map
 
 ```
 nnoremap <leader>mt :call MW_MakeTwitterReferenceLink()<CR>
 nnoremap <leader>mfi :call MW_ConvertFencedToIndent()<CR>
 nnoremap <leader>my :call MW_YamlFrontMatter<CR>
+nnoremap <leader>mh1 :call MW_Heading(1)<CR>
+nnoremap <leader>mh2 :call MW_Heading(2)<CR>
+nnoremap <leader>mh3 :call MW_Heading(3)<CR>
+nnoremap <leader>mh4 :call MW_Heading(4)<CR>
+nnoremap <leader>mh5 :call MW_Heading(5)<CR>
 ```
 
 Or, you might want to map `MW_MakeTwitterReferenceLink()` function to perform its work on the entire document:
@@ -67,6 +91,9 @@ This is my first Vim plugin so any feedback is more than welcome. Please open an
 Add a proper Vim doc file.
 
 ## Changelog
+
+__0.0.2__
+- added `MW_Heading` method
 
 __0.0.1__
 - initial release
