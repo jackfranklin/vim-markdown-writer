@@ -23,7 +23,7 @@ function! MW_YamlFrontMatter()
   execute "normal! I---\<CR>\<ESC>"
   let finished = 0
   while finished < 1
-    let key = input("Enter key: ")
+    let key = input("Enter key (or 'end' to finish): ")
     if(key ==? "end")
       let finished = 1
     else
