@@ -46,7 +46,7 @@ Note that your cursor must be on or above the first fence block.
 #### `MW_YamlFrontMatter`
 Will ask you to input keys and values, and add them to the top of your file in the form of YAML front matter. 
 
-### `MW_Heading(count)`
+#### `MW_Heading(count)`
 Will insert as many hashes as passed in, and leave you in insert mode, ready to enter your heading.
 
 For example:
