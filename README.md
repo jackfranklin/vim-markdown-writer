@@ -60,6 +60,12 @@ Or, you might want to map `MW_MakeTwitterReferenceLink()` function to perform it
 nnoremap <leader>mt ggVG:call MW_MakeTwitterReferenceLink()<CR>
 ```
 
+## Issues / Requests
+This is my first Vim plugin so any feedback is more than welcome. Please open an issue.
+
+## TODO
+Add a proper Vim doc file.
+
 ## Changelog
 
 __0.0.1__
