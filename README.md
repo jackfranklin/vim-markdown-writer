@@ -84,6 +84,8 @@ nnoremap <leader>mh4 :call MW_Heading(4)<CR>
 nnoremap <leader>mh5 :call MW_Heading(5)<CR>
 ```
 
+Of course, some of those heading mappings end up taking more characters than just typing the text itself, but you get the point.
+
 Or, you might want to map `MW_MakeTwitterReferenceLink()` function to perform its work on the entire document:
 
 ```
