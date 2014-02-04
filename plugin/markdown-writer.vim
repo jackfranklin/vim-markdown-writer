@@ -47,7 +47,7 @@ function! MW_MakeWordLink()
   let currentLine = getline(".")
   let url = input("URL (no need for http://): ")
   let replacement = '['.wordUnderCursor.']'
-  if(url =~ 'http://')
+  if(url =~ 'https\?://')
     let replacement .= '('.url.')'
   else
     let replacement .= '(http://'.url.')'
